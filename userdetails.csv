@@ -1,0 +1,101 @@
+id,name,age,occupation,sex,maritalStatus,race,education
+1,lucky,12,gym,female,single,african,10th
+2,giri,34,drunkard,male,married,netherlands,11th
+3,dummy,23,fighter,male,divorced,asian,bachlors
+4,killi,45,trumpy,female,single,black,masters
+5,lovely,54,loly,female,married,asian,inter
+6,vamshi,12,coder,male,divorced,asian,masters
+7,vysh,34,stylist,male,married,african,bachlors
+8,nikki,56,watchman,female,single,netherlands,inter
+9,geetha,54,police,female,married,african,masters
+10,goutham,45,lawyer,male,single,asian,bachlors
+11,dass,55, Adm-clerical,female, Never-married,african, Bachelors
+12,docky,34, Exec-managerial,male, Married-civ-spouse,netherlands, Bachelors
+13,dimmy,54, Handlers-cleaners,male, Divorced,asian, HS-grad
+14,yash,65, Handlers-cleaners,female, Married-civ-spouse,black, 11th
+15,prash,19, Prof-specialty,female, Married-civ-spouse,asian, Bachelors
+16,nish,16, Exec-managerial,male, Married-civ-spouse,asian, Masters
+17,sush,23, Other-service,male, Married-spouse-absent,african, 9th
+18,sak,23, Exec-managerial,female, Married-civ-spouse,netherlands, HS-grad
+19,sonia,26, Prof-specialty,female, Never-married,african, Masters
+20,sania,78, Exec-managerial,male, Married-civ-spouse,asian, Bachelors
+21,setty,56, Exec-managerial,female, Married-civ-spouse,african, Some-college
+22,striyu,54, Prof-specialty,male, Married-civ-spouse,netherlands, Bachelors
+23,sodhi,65, Adm-clerical,male, Never-married,asian, Bachelors
+24,sai,67, Sales,female, Never-married,black, Assoc-acdm
+25,rohit,76, Craft-repair,female, Married-civ-spouse,asian, Assoc-voc
+26,avi,78, Transport-moving,male, Married-civ-spouse,asian, 7th-8th
+27,buddy,45, Farming-fishing,male, Never-married,african, HS-grad
+28,preetham,54, Machine-op-inspct,female, Never-married,netherlands, HS-grad
+29,ganga,34, Sales,female, Married-civ-spouse,african, 11th
+30,yamuna,43, Exec-managerial,male, Divorced,asian, Masters
+31,kaveri,23, Prof-specialty,female, Married-civ-spouse,asian, Doctorate
+32,pooja,32, Other-service,male, Separated,black, HS-grad
+33,koola,66, Farming-fishing,male, Married-civ-spouse,asian, 9th
+34,sila,12, Transport-moving,female, Married-civ-spouse,asian, 11th
+35,pila,34, Tech-support,female, Divorced,african, HS-grad
+36,nila,23, Tech-support,male, Married-civ-spouse,netherlands, Bachelors
+37,mila,45, Craft-repair,male, Never-married,african, HS-grad
+38,seetha,54, ?,female, Married-civ-spouse,asian, Some-college
+39,peetha,12, Exec-managerial,female, Divorced,african, HS-grad
+40,keetha,34, Craft-repair,male, Married-civ-spouse,netherlands, HS-grad
+41,deetha,56, Protective-serv,female, Never-married,asian, Assoc-acdm
+42,weetha,54, Sales,male, Never-married,african, Some-college
+43,cheeta,45, Exec-managerial,male, Divorced,african, Bachelors
+44,beetha,22, Adm-clerical,female, Married-civ-spouse,netherlands, Some-college
+45,maggi,33, Other-service,female, Married-civ-spouse,asian, Some-college
+46,yippie,44, Machine-op-inspct,male, Never-married,black, 11th
+47,ramen,55, Machine-op-inspct,male, Never-married,asian, Some-college
+48,charan,66, Adm-clerical,female, Married-AF-spouse,asian, HS-grad
+49,krishna,77, Sales,female, Married-civ-spouse,african, Some-college
+50,hari,34, Prof-specialty,male, Married-civ-spouse,netherlands, Assoc-acdm
+51,narayana,54, Machine-op-inspct,female, Married-civ-spouse,african, 9th
+52,krithi,65, Prof-specialty,male, Married-civ-spouse,asian, Bachelors
+53,rama,19, Tech-support,male, Married-civ-spouse,asian, Bachelors
+54,shiva,16, Adm-clerical,female, Separated,african, HS-grad
+55,ferfe,23, Handlers-cleaners,female, Never-married,netherlands, HS-grad
+56,gety,23, Prof-specialty,male, Married-civ-spouse,african, Bachelors
+57,puty,26, Machine-op-inspct,male, Married-civ-spouse,asian, HS-grad
+58,ditchi,78, Exec-managerial,female, Divorced,african, Masters
+59,kikiki,56, Craft-repair,female, Married-civ-spouse,netherlands, Assoc-voc
+60,lolol,54, Prof-specialty,male, Never-married,asian, Assoc-voc
+61,pole,65, Exec-managerial,female, Married-civ-spouse,african, Some-college
+62,ranch,67, Other-service,male, Never-married,african, HS-grad
+63,gvr,76, Prof-specialty,male, Married-civ-spouse,netherlands, Prof-school
+64,mohan,33, Exec-managerial,female, Divorced,african, Bachelors
+65,satya,45, Exec-managerial,female, Divorced,netherlands, HS-grad
+66,mani,56, Tech-support,male, Married-civ-spouse,asian, Some-college
+67,devi,67, Machine-op-inspct,male, Married-civ-spouse,black, 5th-6th
+68,rishi,78, Other-service,female, Married-civ-spouse,asian, Assoc-voc
+69,kumar,45, Adm-clerical,female, Married-civ-spouse,asian, HS-grad
+70,chaitu,32, Machine-op-inspct,male, Married-civ-spouse,african, HS-grad
+71,sam,43, Sales,female, Married-civ-spouse,netherlands, Bachelors
+72,naveena,54,coder,male, Married-spouse-absent,african, 7th-8th
+73,lasya,65, Transport-moving,male, Married-civ-spouse,asian, HS-grad
+74,sheeba,55, Prof-specialty,female, Married-civ-spouse,asian, Doctorate
+75,aarthi,54, Tech-support,female, Divorced,african, Some-college
+76,deepu,65, Craft-repair,male, Married-civ-spouse,netherlands, HS-grad
+77,harshi,64, Adm-clerical,male, Divorced,african, Some-college
+78,manasa,63, Adm-clerical,female, Married-civ-spouse,asian, HS-grad
+79,niharika,62, Exec-managerial,female, Married-civ-spouse,african, Some-college
+80,nikki,61,coder,male, Never-married,netherlands, Some-college
+81,lalitha,67, Prof-specialty,female, Never-married,asian, Some-college
+82,vaishnavi,68, Sales,male, Separated,african, Bachelors
+83,navya,69, Sales,male, Married-civ-spouse,african, Bachelors
+84,keerthi,60, Machine-op-inspct,female, Never-married,netherlands, Some-college
+85,priya,23, Prof-specialty,female, Married-civ-spouse,asian, Some-college
+86,hero,21, Other-service,male, Never-married,african, HS-grad
+87,heroine,24, Adm-clerical,male, Married-civ-spouse,netherlands, Assoc-acdm
+88,actor,25,drunkard,female, Married-civ-spouse,asian, 10th
+89,actress,26, Other-service,female, Never-married,black, 11th
+90,vilan,27, Farming-fishing,male, Married-civ-spouse,asian, 7th-8th
+91,aunty,28, Sales,female, Never-married,asian, HS-grad
+92,spandu,29, Other-service,male, Married-civ-spouse,african, Bachelors
+93,pandu,30, Other-service,male, Married-civ-spouse,netherlands, HS-grad
+94,neetha,32, Sales,female, Married-civ-spouse,african, HS-grad
+95,divya,32, Craft-repair,female, Divorced,asian, HS-grad
+96,prasad,33, Sales,male, Divorced,netherlands, HS-grad
+97,satish,34, Protective-serv,male, Married-civ-spouse,black, HS-grad
+98,ravi,43, Prof-specialty,female, Married-civ-spouse,black, Masters
+99,surya,44, Sales,female, Never-married,asian, 9th
+100,vijju,56,stylist,female,married,asian,10th

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV File Uploader</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://www.depts.ttu.edu/communications/media/images/gallery/seal-low.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #upload-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        #file-input {
+            margin: 10px 0;
+        }
+
+        #upload-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="upload-container">
+        <h1>CSV File Uploader</h1>
+        <p>Upload your CSV file below:</p>
+        <form id="upload-form">
+            <input type="file" id="file-input" accept=".csv" required>
+            <br>
+            <button type="button" id="upload-btn" onclick="handleFileUpload(event)">Upload</button>
+        </form>
+    </div>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script>
+        function handleFileUpload() {
+            const fileInput = document.getElementById('file-input');
+            const file = fileInput.files[0];
+
+            if (file) {
+                const formData = new FormData();
+                formData.append('file', file);
+
+                fetch('http://127.0.0.1:8000/upload-csv/', {
+                    method: 'POST',
+                    body: formData,
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                const meanValues = data.mean_values;
+
+                // Extract fingerprinted and normal mean values
+                const fingerprintedMeans = Object.entries(meanValues).filter(([key, value]) => key.startsWith('fingerprint_'));
+                const normalMeans = Object.entries(meanValues).filter(([key, value]) => !key.startsWith('fingerprint_'));
+
+                // Extract labels and values for the chart
+                const labels = fingerprintedMeans.map(([key, value]) => key.replace('fingerprint_', ''));
+                const fingerprintedValues = fingerprintedMeans.map(([key, value]) => value);
+                const normalValues = normalMeans.map(([key, value]) => value);
+
+                // Create a bar chart
+                const ctx = document.getElementById('myChart').getContext('2d');
+                const myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            {
+                                label: 'Fingerprinted Columns',
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1,
+                                data: fingerprintedValues,
+                            },
+                            {
+                                label: 'Normal Columns',
+                                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                borderColor: 'rgba(255, 99, 132, 1)',
+                                borderWidth: 1,
+                                data: normalValues,
+                            },
+                        ],
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                            },
+                            x: {
+                                grouped: true,
+                            },
+                        },
+                    },
+                });
+            })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const fileInput = document.getElementById('file-input');
+            fileInput.addEventListener('click', handleFileUpload);
+        });
+    </script>
+</body>
+</html>
